@@ -57,7 +57,7 @@ pipeline {
 }
         stage('run on 5173'){
             steps{
-                sh 'docker run -p 5173:5173 angelomakory/pdf_front'
+                sh 'docker run -d -p 5173:5173 angelomakory/pdf_front'
             }
         }
       stage ('push'){
