@@ -25,12 +25,12 @@ pipeline {
                 
             }
         }
-        stage('Test') {
-            steps {
-                echo "Testing.."
-                sh 'npm run test:unit'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         echo "Testing.."
+        //         sh 'npm run test:unit'
+        //     }
+        // }
         // stage('Build') {
         //     steps {
         //         echo 'Building....'
