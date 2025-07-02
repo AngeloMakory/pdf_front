@@ -100,6 +100,7 @@ export default {
   gap: 1rem;
   margin: 2rem 0;
   align-items: center;
+  color: black;
 }
 
 #pdf-upload {
@@ -130,7 +131,8 @@ export default {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background-color: #3aa876;
+  background-color: white;
+  color: #42b983;
 }
 
 .submit-btn:disabled {
@@ -142,8 +144,8 @@ export default {
   margin-top: 2rem;
   padding: 1rem;
   border: 1px solid #eee;
-  border-radius: 4px;
-  background-color: #f9f9f9;
+  border-radius: 10px;
+  background-color: #0c0c0c;
 }
 
 .summary-output {
