@@ -102,7 +102,7 @@ onMounted(() => {
 <template>
   <div class="app">
     <header class="app-header">
-      <h1>PDF Summary Generator</h1>
+      <h1>PDF ASSISTANT</h1>
     </header>
     
     <main class="app-main">
@@ -171,17 +171,20 @@ onMounted(() => {
     </main>
     
     <footer class="app-footer">
-      <p>&copy; 2025 PDF Summary Generator</p>
+      <p>&copy; Powered By <div class="angelo"><b>ANGELO MAKORY</b></div></p>
     </footer>
   </div>
 </template>
 
 <style scoped>
+.angelo{
+  color: #ff0000;
+}
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #667eea ;
+  background: #00aeff ;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
