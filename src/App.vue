@@ -171,15 +171,13 @@ onMounted(() => {
     </main>
     
     <footer class="app-footer">
-      <p>&copy; Powered By <div class="angelo"><b>ANGELO MAKORY</b></div></p>
+      <p>&copy; Powered By <b>ANGELO MAKORY</b></p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-.angelo{
-  color: #ff0000;
-}
+
 .app {
   min-height: 100vh;
   display: flex;
