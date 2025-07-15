@@ -24,7 +24,7 @@ const onFileChange = (event) => {
 const fetchMessages = async () => {
   try {
     isLoading.value = true
-    const res = await axios.get('http://localhost:5000/api/pdfs')
+    const res = await axios.get('/api/pdfs')
     messages.value = res.data
     console.log('Fetched messages:', res.data)
   } catch (err) {
@@ -50,7 +50,7 @@ const postMessage = async () => {
     const formData = new FormData()
     formData.append('file', selectedFile.value)
 
-    const res = await axios.post('http://localhost:5000/api/pdfs', formData, {
+    const res = await axios.post('/api/pdfs', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
       timeout: 60000 // 60 second timeout for large files
     })
