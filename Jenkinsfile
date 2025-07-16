@@ -55,9 +55,9 @@ pipeline {
         sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
     }
 }
-        stage('run on 5173'){
+        stage('run on 5175'){
             steps{
-                sh 'docker run -d -p 5173:5173 angelomakory/pdf_front'
+                sh 'docker run -d -p 5175:5173 angelomakory/pdf_front'
             }
         }
       stage ('push'){
